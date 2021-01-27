@@ -1,9 +1,13 @@
 import "./App.css";
+import CounterInput from "./components/CounterInput";
+import CounterOutput from "./components/CounterOutput";
 
 function App() {
 	return (
 		<div className="App">
-			<h2>Hello World</h2>
+			<CounterOutput />
+			<br />
+			<CounterInput />
 		</div>
 	);
 }
