@@ -1,20 +1,23 @@
+import { increment, decrement, reset } from "./Actions";
+
 const initialState = {
 	counter: 0,
-	name: "Umar",
 };
 
 const CounterReducer = (state = initialState, action) => {
 	switch (action.type) {
-		case "INCREMENT":
+		case increment:
 			return {
 				...state,
 				counter: state.counter + 1,
 			};
-		case "DECREMENT":
+		case decrement:
 			return {
 				...state,
 				counter: state.counter - 1,
 			};
+		case reset:
+			return initialState;
 		default:
 			return state;
 	}
