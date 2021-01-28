@@ -5,6 +5,9 @@ import App from "./App";
 import { Provider } from "react-redux";
 // import store from "./components/toolkit-counter/StoreTK";
 // import store from "./components/with-createSlice/StoreCS";
+import { makeServer } from "./MirageJs/server";
+
+makeServer();
 
 ReactDOM.render(
 	<React.StrictMode>

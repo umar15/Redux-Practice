@@ -5,11 +5,12 @@ import "./App.css";
 // import CounterOutputTK from "./components/toolkit-counter/CounterOutputTK";
 // import CounterInputCS from "./components/with-createSlice/CounterInputCS";
 // import CounterOutputCS from "./components/with-createSlice/CounterOutputCS";
+import Books from "./MirageJs/Books";
 
 function App() {
 	return (
 		<div className="App">
-			<h2>Hello World</h2>
+			<Books />
 		</div>
 	);
 }
